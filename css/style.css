@@ -15,7 +15,7 @@ header .animate span{
 }
 header .animate span::after{
     content: "|";
-    -webkit-animation: typing 6s infinite linear;
+    -webkit-animation: typing 12s infinite linear;
 
 }
 
