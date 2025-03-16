@@ -196,6 +196,11 @@ body:has(#home-section:target) .home-anchor::after {
     background-color: var(--navbar-color);
 }
 
+
+.navbar{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
 /* about section */
 
 #about-section .skill-custom{
@@ -513,6 +518,9 @@ body:has(#home-section:target) .home-anchor::after {
     color: black;
 
     transition: 0.5s all;
+
+
+    margin-bottom: 20px;
 }
 
 
@@ -543,3 +551,5 @@ body:has(#home-section:target) .home-anchor::after {
 .footer-color span{
     font-weight: bold;
 }
+
+
