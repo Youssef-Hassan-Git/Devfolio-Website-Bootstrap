@@ -1,0 +1,545 @@
+:root{
+
+    --bg-secondary-color:#F5F5F5;
+    --navbar-color:#040404;
+}
+
+h1{
+    font-size: 72px;
+    font-weight: 700;
+}
+
+header .animate span{
+    font-weight: 600 ;
+    font-size: 40px;
+}
+header .animate span::after{
+    content: "|";
+    -webkit-animation: typing 6s infinite linear;
+
+}
+
+@keyframes typing {
+    /* Designer (8 letters) */
+    0% { content: "|"; }
+    1% { content: "D|"; }
+    2% { content: "De|"; }
+    3% { content: "Des|"; }
+    4% { content: "Desi|"; }
+    5% { content: "Desig|"; }
+    6% { content: "Design|"; }
+    7% { content: "Designe|"; }
+    8% { content: "Designer|"; }
+    9% { content: "Designe|"; }
+    10% { content: "Design|"; }
+    11% { content: "Desig|"; }
+    12% { content: "Desi|"; }
+    13% { content: "Des|"; }
+    14% { content: "De|"; }
+    15% { content: "D|"; }
+    16% { content: "|"; }
+
+    /* Developer (9 letters) */
+    17% { content: "D|"; }
+    18% { content: "De|"; }
+    19% { content: "Dev|"; }
+    20% { content: "Deve|"; }
+    21% { content: "Devel|"; }
+    22% { content: "Develo|"; }
+    23% { content: "Develop|"; }
+    24% { content: "Develope|"; }
+    25% { content: "Developer|"; }
+    26% { content: "Develope|"; }
+    27% { content: "Develop|"; }
+    28% { content: "Develo|"; }
+    29% { content: "Devel|"; }
+    30% { content: "Deve|"; }
+    31% { content: "Dev|"; }
+    32% { content: "De|"; }
+    33% { content: "D|"; }
+    34% { content: "|"; }
+
+    /* Freelancer (10 letters) */
+    35% { content: "F|"; }
+    36% { content: "Fr|"; }
+    37% { content: "Fre|"; }
+    38% { content: "Free|"; }
+    39% { content: "Freel|"; }
+    40% { content: "Freela|"; }
+    41% { content: "Freelan|"; }
+    42% { content: "Freelanc|"; }
+    43% { content: "Freelance|"; }
+    44% { content: "Freelancer|"; }
+    45% { content: "Freelance|"; }
+    46% { content: "Freelanc|"; }
+    47% { content: "Freelan|"; }
+    48% { content: "Freela|"; }
+    49% { content: "Freel|"; }
+    50% { content: "Free|"; }
+    51% { content: "Fre|"; }
+    52% { content: "Fr|"; }
+    53% { content: "F|"; }
+    54% { content: "|"; }
+
+    /* Photographer (12 letters) */
+    55% { content: "P|"; }
+    56% { content: "Ph|"; }
+    57% { content: "Pho|"; }
+    58% { content: "Phot|"; }
+    59% { content: "Photo|"; }
+    60% { content: "Photog|"; }
+    61% { content: "Photogr|"; }
+    62% { content: "Photogra|"; }
+    63% { content: "Photograp|"; }
+    64% { content: "Photograph|"; }
+    65% { content: "Photographe|"; }
+    66% { content: "Photographer|"; }
+    67% { content: "Photographe|"; }
+    68% { content: "Photograph|"; }
+    69% { content: "Photograp|"; }
+    70% { content: "Photogra|"; }
+    71% { content: "Photogr|"; }
+    72% { content: "Photog|"; }
+    73% { content: "Photo|"; }
+    74% { content: "Phot|"; }
+    75% { content: "Pho|"; }
+    76% { content: "Ph|"; }
+    77% { content: "P|"; }
+    78% { content: "|"; }
+    100% { content: "|"; } /* End of cycle */
+}
+
+/* background image */
+header.vh-100 {
+    background-image:  linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55) ), url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* ANCHORS */
+.font-customize{
+    font-size: 17px;
+    font-weight: 600;
+
+}
+
+/* DEVFOLIO */
+.font-size{
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* hovering */
+.contact-anchor,
+.drop-anchor,
+.blog-anchor,
+.work-anchor,
+.services-anchor,
+.about-anchor,
+.home-anchor {
+    position: relative;
+}
+
+.contact-anchor::after,
+.drop-anchor::after,
+.blog-anchor::after,
+.work-anchor::after,
+.services-anchor::after,
+.about-anchor::after,
+.home-anchor::after {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 2px;
+    background-color: white;
+    top: 90%; 
+    left: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* target */
+body:has(#contact-section:target) .home-anchor::after,
+body:has(#drop-section:target) .drop-anchor::after,
+body:has(#blog-section:target) .blog-anchor::after,
+body:has(#work-section:target) .work-anchor::after,
+body:has(#services-section:target) .services-anchor::after,
+body:has(#about-section:target) .about-anchor::after, 
+body:has(#home-section:target) .home-anchor::after {
+    width: 36px; 
+}
+
+/* hovering */
+
+.contact-anchor:hover::after,
+.drop-anchor:hover::after,
+.blog-anchor:hover::after,
+.work-anchor:hover::after,
+.services-anchor:hover::after,
+.about-anchor:hover::after ,
+.home-anchor:hover::after {
+    width: 36px;
+}
+
+
+.icon-dropdown{
+    font-size: 14px;
+}
+
+.nav-color{
+    background-color: var(--navbar-color);
+}
+
+/* about section */
+
+#about-section .skill-custom{
+    font-weight: 700;
+}
+
+
+#about-section .bold-profile{
+    font-weight: bold;
+}
+
+
+#about-section .about-customize{
+
+    position: relative;
+}
+
+
+#about-section .about-customize::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    top: 120%;
+    left: 0px;
+    background-color: #0078FF;
+
+}
+
+
+#about-section .about-paragraph{
+    font-size: 20px;
+    font-weight: 300;
+    color: #4e4e4e;
+}
+
+.bg-color{
+    background-color: var(--bg-secondary-color);
+}
+
+/* services section */
+
+.paragraph-heading {
+    position: relative;
+    color: #4e4e4e;
+}
+
+.paragraph-heading::after{
+    content: "";
+    position: absolute;
+    background-color: #0078FF;
+    width: 40px;
+    height: 5px;
+    top: 160%;
+    left: 50%;
+
+
+    transform: translateX(-50%);
+}
+
+
+.heading{
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#services-section .icon{
+    font-size: 34px;
+    width: 60px;
+    height: 60px;
+    border:10px solid #0078FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+
+    transition: 0.4s all;
+}
+
+
+#services-section .services-content h3{
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+
+#services-section .services-content p{
+    color: #4e4e4e;
+
+}
+
+
+.shadow-custom{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+
+#services-section .box-hover:hover .icon{
+    background-color: rgb(0, 119, 255);
+    border-color: #CDE1F8;
+}
+
+
+/* accomplishments */
+
+.accomplishments{
+    /* height: 50vh; */
+    background-image:  linear-gradient(rgba(0, 119, 255,0.55),rgba(0, 119, 255,0.55) ), url("../images/counters-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* padding: 100px; */
+}
+
+
+.padd{
+    padding-top: 100px ;
+    padding-bottom: 80px ;
+}
+
+.accomplishments .icon-work, .accomplishments p{
+    color: white;
+}
+
+
+
+.accomplishments .icon-work{
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border: 8px solid #CDE1F8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.accomplishments p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.accomplishments .font-number{
+    font-size: 30px;
+}
+
+
+/* work section */
+#work-section p{
+    color: black;
+}
+
+#work-section h2{
+    font-size: 22px;
+    margin-top: 14px;
+}
+
+#work-section .work-webdesign{
+    color: #0078FF;
+}
+
+
+#work-section .icon-paragraph i{
+    color: #0078FF;
+    font-size: 22px;
+    height: 40px;
+    width: 40px;
+    border: 3px solid #0078FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px ;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+#work-section .icon-paragraph  a{
+    text-decoration: none;
+}
+
+
+#work-section .work-img{
+    cursor: pointer;
+    transition: 0.7s all;
+}
+
+
+
+#work-section .work-img:hover{
+    transform: scale(1.3);
+}
+
+
+.bg-image{
+    background-image:  linear-gradient(rgba(0, 119, 255,0.7),rgba(0, 119, 255,0.7) ), url("../images/overlay-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;    
+}
+
+
+/* Testimonials */
+
+.carousel-indicators .new-btn{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+
+/* blog section */
+
+#blog-section .card-title{
+    transition: 0.5s all ;
+}
+
+#blog-section .card-title:hover{
+    color: #0078FF;
+}
+
+#blog-section .width-blogimage{
+    width: 10%;
+}
+
+
+#blog-section .footer-hover{
+    transition: 0.5s all ;
+
+}
+
+#blog-section .footer-hover:hover{
+    color: #0078FF;
+}
+
+
+#blog-section  .card-text{
+    color: #4e4e4e;
+    font-size: 15px;
+}
+
+
+
+
+/* contact section */
+
+#contact-section .contact-heading{
+    position: relative;
+}
+
+
+#contact-section .contact-heading::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 105px;
+    top: 120%;
+    left: 0;
+    background-color: #0078FF;
+}
+
+/* second half */
+
+#contact-section .contact-paragraph{
+    color: #4e4e4e;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+/* submit button */
+.contact-button-hover{
+    border: 5px solid white;
+    transition: all 0.5s ease-in-out;
+
+
+}
+/* hover button */
+.contact-button-hover:hover{
+    background-color: #0078FF;
+    border: 5px solid #CDE1F8;
+}
+
+/* social icons */
+#contact-section .social-icons{
+    font-size: 24px ;
+
+    height: 40px;
+    width: 300px;
+    /* background-color: red; */
+}
+
+#contact-section .social-icons i{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: 3px solid #0078FF;
+
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+    transition: 0.5s all;
+}
+
+
+#contact-section .social-icons a{
+    text-decoration: none;
+}
+
+
+#contact-section .social-icons i:hover{
+    background-color: #0078FF;
+    border-color: #CDE1F8;
+    color: white;
+}
+
+#contact-section .icon-paragraph{
+    color: #4e4e4e;
+}
+
+
+
+.footer-color{
+    box-shadow: 0px -13px 15px rgba(0, 0, 0, 0.1); /* Shadow on the top */
+
+    color: white;
+    background-color: #0062D3;
+}
+
+.footer-color span{
+    font-weight: bold;
+}
